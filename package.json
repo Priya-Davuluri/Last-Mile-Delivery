@@ -1,0 +1,16 @@
+{
+  "name": "last-mile-delivery-tracker",
+  "version": "1.0.0",
+  "description": "Last-Mile Delivery Tracker — Logistics Management Platform (MERN Stack)",
+  "private": true,
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "start": "cd backend && npm start",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": ["logistics", "delivery", "rate-calculator", "tracking", "mern"],
+  "author": "Antigravity",
+  "license": "MIT"
+}
