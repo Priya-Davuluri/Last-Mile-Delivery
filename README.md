@@ -49,33 +49,19 @@ cd last-mile-delivery-tracker
 # 2. Backend setup
 cd backend
 npm install
-cp .env.example .env   # fill in your values (see below)
+cp .env.example .env   # add your own credentials — see .env.example for required keys
 npm run dev             # starts Express server
 
 # 3. Frontend setup
 cd ../frontend
 npm install
-cp .env.example .env   # fill in your values (see below)
+cp .env.example .env   # add your own credentials — see .env.example for required keys
 npm run dev             # starts React app
 ```
 
-### `.env.example` — Backend
-```env
-PORT=5000
-MONGO_URI=your_mongodb_atlas_connection_string
-JWT_SECRET=your_jwt_secret_key
-GOOGLE_CLIENT_ID=your_google_oauth_client_id
-GOOGLE_CLIENT_SECRET=your_google_oauth_client_secret
-EMAIL_USER=your_email_address
-EMAIL_PASS=your_email_app_password
-CLIENT_URL=http://localhost:5173
-```
+Each of `backend/` and `frontend/` includes its own `.env.example` file listing the required variable names (database URI, JWT secret, Google OAuth credentials, email service credentials, API base URL). Copy it to `.env` and fill in your own values — never commit `.env` itself.
 
-### `.env.example` — Frontend
-```env
-VITE_API_BASE_URL=http://localhost:5000/api
-VITE_GOOGLE_CLIENT_ID=your_google_oauth_client_id
-```
+> **Security note:** `.env` is listed in `.gitignore` and must never be committed or shared. Only `.env.example` (with placeholder names, no real values) is tracked in the repo.
 
 ---
 
