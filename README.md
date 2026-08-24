@@ -116,7 +116,7 @@ All rates, zones, and surcharges are stored in the database and edited by admin 
 ## Deployment
 
 - Frontend deployed on **Vercel**: `<frontend-url>`
-- Backend deployed on **Render**: `<backend-url>`
+- Backend deployed on **Render**: https://last-mile-delivery-gew9.onrender.com
 - Live app: `<hosted-app-url>`
 
 ---
